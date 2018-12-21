@@ -26,4 +26,14 @@ public class MaPremiereClasseDeTest {
 		
 		Assert.assertEquals(-leNombre, resultat, 0);
 	}
+	
+	@Test
+	public void abs_QuandNombreEstZero_AlorsLeResultatEstZero() {
+
+		double leNombre = 0;
+		
+		double resultat = Math.abs(leNombre);
+		
+		Assert.assertEquals(leNombre, resultat, 0);
+	}
 }
